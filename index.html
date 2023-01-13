@@ -1,245 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
+<html data-theme="halloween">
 	<head>
 		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Portofolio | Alif Irhas</title>
 
 		<!-- Iconify -->
-		<script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+		<script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
 
 		<!-- Tailwind -->
-		<script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
-
-		<script>
-			tailwind.config = {
-				theme: {
-					extend: {
-						colors: {
-							primary: "#611274",
-							secondary: "#540C5F",
-							accent: "#470957",
-							neutral: "#000000",
-							"base-80": "#212121",
-							info: "#AED0E5",
-							success: "#2BDEB7",
-							warning: "#9A830E",
-							error: "#F76755",
-						},
-					},
-				},
-			};
-		</script>
+		<link href="./dist/output.css" rel="stylesheet" />
 	</head>
+	<body class="p-6 min-h-screen font-sans text-gray-200">
+		<div class="lg:mt-32 mt-24"></div>
 
-	<body class="bg-base-80 text-gray-200">
-		<div class="container mx-auto p-4 place-items-center h-screen">
-			<!-- Salam kenal dan perkenalan -->
-			<div class="lg:text-center w-full mt-32">
-				<h1 class="text-4xl font-bold mb-6">Hai, Saya Alif 👋</h1>
-				<div class="text-lg lg:w-[70vh] mx-auto mt-6 leading-relaxed">
-					Saya mengimplementasikan business logic dan logika dalam back end
-					menjadi fungsi dan API yang bisa digunakan. Dengan bantuan trello,
-					draw.io, VScode, dan secangkir kopi ☕ sesuai waktu dan dana.
-				</div>
+		<!-- Title -->
+		<div class="lg:text-center">
+			<h1 class="text-7xl font-bold mb-6">Hai, Saya Alif Irhas 👋</h1>
+			<div class="text-xl underline">Web Developer</div>
+		</div>
+
+		<!-- Perkenalan -->
+		<div
+			class="text-xl lg:w-[70vh] mx-auto mt-6 leading-relaxed lg:text-center"
+		>
+			<p>
+				Saya mengimplementasikan logika bisnis dan algoritma dalam back-end
+				sebuah web, seperti REST-API. Dengan bantuan project management tool,
+				VScode, dan secangkir kopi ☕.
+			</p>
+
+			<div class="mt-24"></div>
+
+			<div class="container mx-auto">
+				<center>
+					<a href="./pages/project/index.html">
+						<button class="btn btn-lg btn-success btn-outline items-center">
+							<iconify-icon icon="mdi:magnify"></iconify-icon>
+							&nbsp; Lihat Project
+						</button>
+					</a>
+				</center>
 			</div>
 
-			<!-- Tolong Hubungi -->
-			<div class="flex gap-2 mx-auto lg:justify-center mt-8">
-				Ingin bertanya?
-				<a href="mailto:irhasalif@gmail.com" class="font-bold inline-block"
-					>Hubungi Saya</a
+			<div class="mt-24"></div>
+
+			<p>
+				Saya sedang berada di
+				<iconify-icon icon="mdi:map-marker"></iconify-icon> Bondowoso, Jawa
+				Timur, Indonesia. Mari hubungi saya dan buat sesuatu yang menarik
+			</p>
+			<div>
+				<a href="https://www.linkedin.com/in/alif-irhas-0750331b3/" target="_blank">
+					<button class="btn btn-info mt-2 normal-case text-lg">
+						<iconify-icon icon="mdi:linkedin"></iconify-icon>
+						&nbsp; LinkedIn
+					</button>
+				</a>
+				<button
+					class="btn btn-primary mt-2 lowercase text-lg"
+					onclick="copyToClipBoard('irhasalif@gmail.com')"
 				>
+					<iconify-icon
+						icon="material-symbols:content-copy-outline"
+					></iconify-icon>
+					&nbsp; irhasalif@gmail.com
+				</button>
+				<a href="https://github.com/alifirhas" target="_blank">
+					<button class="btn btn-secondary mt-2 normal-case text-lg">
+						<iconify-icon icon="mdi:github"></iconify-icon>
+						&nbsp; GitHub
+					</button>
+				</a>
 			</div>
-
-			<!-- Recent Project -->
-			<div class="mt-32">
-				<h1 class="text-4xl mb-8 w-max lg:mx-auto">Project Terbaru</h1>
-
-				<!-- Item -->
-				<div class="">
-					<a href="https://github.com/alifirhas/natsa2.0_Website">
-						<div
-							class="lg:mx-auto text-lg w-max mb-2 hover:border-2 hover:border-white hover:px-3 hover:py-2 hover:my-4 transition-all duration-150"
-						>
-							<sup>01</sup>
-							Nature Sawah
-						</div>
-					</a>
-					<a
-						href="https://github.com/alifirhas/Belimbing-Naive-Bayes-RGB-Matlab"
-					>
-						<div
-							class="lg:mx-auto text-lg w-max mb-2 hover:border-2 hover:border-white hover:px-3 hover:py-2 hover:my-4 transition-all duration-150"
-						>
-							<sup>02</sup>
-							Deteksi Kematangan Belimbing
-						</div>
-					</a>
-					<a
-						href="https://github.com/alifirhas/MimiKost"
-					>
-						<div
-							class="lg:mx-auto text-lg w-max mb-2 hover:border-2 hover:border-white hover:px-3 hover:py-2 hover:my-4 transition-all duration-150"
-						>
-							<sup>03</sup>
-							Mimikost
-						</div>
-					</a>
-				</div>
-			</div>
-
-			<!-- Recent Project -->
-			<div class="mt-32">
-				<h1 class="text-4xl mb-2 w-max lg:mx-auto">Coming Soon</h1>
-				<p class="text-lg mb-8 w-max lg:mx-auto">Boleh dinanti 😉</p>
-
-				<!-- Item -->
-				<div class="">
-					<a href="https://github.com/alifirhas/Meal-Planner-on-Steroid">
-						<div
-							class="lg:mx-auto text-lg w-max mb-2 hover:border-2 hover:border-white hover:px-3 hover:py-2 hover:my-4 transition-all duration-150"
-						>
-							<sup>01</sup>
-							Meal Planner on Steroid | MPS - Mobile
-						</div>
-					</a>
-					<a
-						href="https://github.com/alifirhas/Meal-Planner-on-Steroid-API-Django"
-					>
-						<div
-							class="lg:mx-auto text-lg w-max mb-2 hover:border-2 hover:border-white hover:px-3 hover:py-2 hover:my-4 transition-all duration-150"
-						>
-							<sup>02</sup>
-							Meal Planner on Steroid | MPS - API
-						</div>
-					</a>
-				</div>
-			</div>
-
-			<!-- Keahlian -->
-			<div class="mt-32">
-				<h1
-					class="text-4xl mb-8 hover:underline lg:text-center lg:w-max lg:mx-auto"
-				>
-					Teknologi yang saya dalami
-				</h1>
-
-				<!-- Item -->
-				<div class="flex gap-4 gap-x-4 flex-wrap lg:justify-center">
-					<a
-						class="text-lg w-max shrink-0 border-2 border-white px-3 py-2 hover:bg-white hover:text-black transition-all duration-150"
-						href="https://github.com/alifirhas/natsa2.0_Website"
-					>
-						<span
-							class="iconify inline-block"
-							data-icon="fa6-brands:laravel"
-						></span>
-						Laravel
-					</a>
-					<a
-						class="text-lg w-max shrink-0 border-2 border-white px-3 py-2 hover:bg-white hover:text-black transition-all duration-150"
-						href="https://github.com/alifirhas/natsa2.0_Website"
-					>
-						<span
-							class="iconify inline-block"
-							data-icon="bi:filetype-php"
-						></span>
-						PHP</a
-					>
-					<a
-						class="text-lg w-max shrink-0 border-2 border-white px-3 py-2 hover:bg-white hover:text-black transition-all duration-150"
-						href="https://github.com/alifirhas/MimiKost"
-					>
-						<span
-							class="iconify inline-block"
-							data-icon="file-icons:tailwind"
-						></span>
-						Tailwind</a
-					>
-					<a
-						class="text-lg w-max shrink-0 border-2 border-white px-3 py-2 hover:bg-white hover:text-black transition-all duration-150"
-						href="https://github.com/alifirhas/Meal-Planner-on-Steroid"
-					>
-						<span class="iconify inline-block" data-icon="logos:flutter"></span>
-						Flutter</a
-					>
-					<a
-						class="text-lg w-max shrink-0 border-2 border-white px-3 py-2 hover:bg-white hover:text-black transition-all duration-150"
-						href="https://github.com/alifirhas/Meal-Planner-on-Steroid-API-Django"
-					>
-						<span
-							class="iconify inline-block"
-							data-icon="vscode-icons:file-type-django"
-						></span>
-						Django</a
-					>
-					<a
-						class="text-lg w-max shrink-0 border-2 border-white px-3 py-2 hover:bg-white hover:text-black transition-all duration-150"
-						href="https://github.com/alifirhas/Meal-Planner-on-Steroid-API-Django"
-					>
-						<span class="iconify inline-block" data-icon="cib:python"></span>
-						Python</a
-					>
-
-					<a
-						class="text-lg w-max shrink-0 border-2 border-white px-3 py-2 hover:bg-white hover:text-black transition-all duration-150"
-						href=""
-					>
-						<span
-							class="iconify inline-block"
-							data-icon="fontisto:mysql"
-						></span>
-						MySQL</a
-					>
-				</div>
-			</div>
-
-			<!-- Mari Berteman di sosial media -->
-			<div class="mt-32">
-				<h1
-					class="text-4xl mb-8 hover:underline lg:text-center lg:w-max lg:mx-auto"
-				>
-					Mari berteman
-				</h1>
-
-				<!-- Item -->
-				<div class="flex gap-4 gap-x-4 flex-wrap lg:justify-center">
-					<div class="w-max shrink-0">
-						<a
-							class="text-3xl"
-							href="https://www.linkedin.com/in/alif-irhas-0750331b3/"
-						>
-							<span class="iconify" data-icon="logos:linkedin-icon"></span>
-						</a>
-					</div>
-					<div class="w-max shrink-0">
-						<a
-							href="https://www.instagram.com/alif_irhas/?hl=en"
-							class="text-3xl"
-						>
-							<span
-								class="iconify"
-								data-icon="akar-icons:instagram-fill"
-							></span>
-						</a>
-					</div>
-					<div class="w-max shrink-0">
-						<a href="https://id.quora.com/profile/Alif-Irhas" class="text-3xl">
-							<span class="iconify" data-icon="bi:quora"></span>
-						</a>
-					</div>
-
-					<div class="w-max shrink-0">
-						<a href="https://github.com/alifirhas" class="text-3xl">
-							<span class="iconify" data-icon="akar-icons:github-fill"></span>
-						</a>
-					</div>
-				</div>
-			</div>
-
-			<div class="my-4">&nbsp;</div>
 		</div>
 	</body>
+
+	<script>
+		function copyToClipBoard(copyText) {
+			// Copy the text inside the text field
+			navigator.clipboard.writeText(copyText);
+		}
+	</script>
 </html>
