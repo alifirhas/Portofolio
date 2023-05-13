@@ -2913,6 +2913,10 @@ html {
   font-size: 1.125rem;
 }
 
+.btn-block {
+  width: 100%;
+}
+
 .btn-square:where(.btn-lg) {
   height: 4rem;
   width: 4rem;
@@ -2994,6 +2998,21 @@ html {
   margin-right: auto;
 }
 
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.my-8 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.my-10 {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
 .mt-24 {
   margin-top: 6rem;
 }
@@ -3065,6 +3084,10 @@ html {
 
 .h-screen {
   height: 100vh;
+}
+
+.h-20 {
+  height: 5rem;
 }
 
 .min-h-screen {
@@ -3178,6 +3201,15 @@ html {
 .border-yellow-200 {
   --tw-border-opacity: 1;
   border-color: rgb(254 240 138 / var(--tw-border-opacity));
+}
+
+.border-blue-400 {
+  --tw-border-opacity: 1;
+  border-color: rgb(96 165 250 / var(--tw-border-opacity));
+}
+
+.border-opacity-50 {
+  --tw-border-opacity: 0.5;
 }
 
 .bg-base-300 {
@@ -3313,6 +3345,10 @@ html {
 
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .md\:place-content-center {
