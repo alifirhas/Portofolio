@@ -3063,6 +3063,10 @@ html {
   height: 100%;
 }
 
+.h-screen {
+  height: 100vh;
+}
+
 .min-h-screen {
   min-height: 100vh;
 }
@@ -3082,6 +3086,22 @@ html {
 .max-w-max {
   max-width: -moz-max-content;
   max-width: max-content;
+}
+
+.max-w-xl {
+  max-width: 36rem;
+}
+
+.max-w-3xl {
+  max-width: 48rem;
+}
+
+.max-w-\[70\%\] {
+  max-width: 70%;
+}
+
+.max-w-\[75\%\] {
+  max-width: 75%;
 }
 
 .flex-grow {
@@ -3305,6 +3325,10 @@ html {
 
   .md\:text-center {
     text-align: center;
+  }
+
+  .md\:text-justify {
+    text-align: justify;
   }
 }
 
