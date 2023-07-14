@@ -1,63 +1,176 @@
 <!DOCTYPE html>
-<html data-theme="halloween">
+<html lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>alifirhas - SIPP - Adiwiyata</title>
 
-		<title>Alif Irhas | SIPP-Adiwiyata</title>
-
+		<!-- Tailwind -->
 		<link href="../../dist/output.css" rel="stylesheet" />
 
+		<!-- Icon -->
+		<link
+			rel="icon"
+			href="https://avatars.githubusercontent.com/u/32509276?v=4"
+			type="image/png"
+		/>
+
+		<!-- font-awesome -->
+		<script
+			defer
+			src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+			integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc"
+			crossorigin="anonymous"
+		></script>
+
+		<!-- Iconify -->
 		<script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+
+		<!-- Jquery -->
+		<script
+			src="https://code.jquery.com/jquery-3.4.1.min.js"
+			integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+			crossorigin="anonymous"
+		></script>
+
+		<!-- Fonts -->
+		<link
+			href="https://fonts.googleapis.com/css?family=Poppins"
+			rel="stylesheet"
+		/>
 	</head>
-	<body class="p-6 min-h-screen font-sans text-gray-200">
-		<div class="lg:mt-10 mt-5"></div>
 
-		<!-- Title -->
-		<div class="md:text-center">
-			<h1 class="text-4xl font-bold mb-2">Sistem Penataan & Pentaatan</h1>
-			<p class="text-4xl font-bold mb-2">Adiwiyata</p>
-		</div>
-		<div class="flex flex-wrap mt-4 gap-2 md:place-content-center">
-			<div class="btn btn-info btn-outline">
-				<iconify-icon icon="logos:adonisjs-icon"></iconify-icon>
-				&nbsp; AdonisJS
-			</div>
-			<div class="btn btn-success btn-outline">
-				<iconify-icon icon="la:node"></iconify-icon>
-				&nbsp;node.js
-			</div>
-			<div class="btn btn-nutral btn-outline">
-				<iconify-icon icon="simple-icons:postman"></iconify-icon>
-				&nbsp;RESTful-API
-			</div>
-			<div class="btn btn-info btn-outline">
-				<iconify-icon icon="simple-icons:dart"></iconify-icon> 
-				&nbsp; TypeScript
-			</div>
-			<div class="btn btn-primary btn-outline">
-				<iconify-icon icon="fontisto:mysql"></iconify-icon> 
-				&nbsp; PostgreSQL
-			</div>
+	<body
+		class="m-0 p-0 w-full min-h-screen bg-black text-white items-center font-['Poppins']"
+	>
+		<!-- Background -->
+		<div
+			id="background"
+			class="w-full h-[50vh] bg-cover bg-no-repeat top-0 bottom-0 absolute -z-2 bg-zinc-600"
+		>
+			<img
+				src="../../assets/images/sipp_wallpaper.gif"
+				class="h-full w-full object-cover mix-blend-overlay pointer-events-none"
+				alt=""
+			/>
 		</div>
 
-		<div class="mb-5"></div>
+		<!-- Content -->
+		<div class="relative">
+			<div class="z-0">
+				<!-- Profile and nav -->
+				<div class="mt-[34vh] flex items-center">
+					<!-- Go back button -->
+					<div class="pl-10">
+						<a href="/" class="text-3xl"><i class="fas fa-arrow-left"></i></a>
+					</div>
 
-		<!-- Deskripsi -->
-		<div class="md:mx-auto mb-2 w-full max-w-3xl md:text-justify text-lg">
-			Saya membuat salah satu sub-sistem dari SIPP, yaitu SIPP Adiwiyata pada bagian RESTful-API. SIPP Adiwiyata adalah sistem tata kelola untuk pengajuan dan pengujian sekolah layak Adiwiyata. RESTful-API dibuat dengan tujuan untuk proses integrasi dengan front-end dan memudahkan penggabungan dengan sistem. 
-		</div>
-		<div class="md:mx-auto mb-2 w-full max-w-3xl md:text-justify text-lg">
-			Saya membuat RESTful-API dan API. RESTful-API digunakan sebagai browsable API seperti media query dan API dengan custom logic sesuai dengan kebutuhan fitur yang ada pada front-end. Custom API dibuat dengan tujuan mengurangi business logic pada front-end.</div>
-		</div>
-		<div class="mt-20"></div>
+					<!-- Profile -->
+					<table class="w-[65vw] mx-auto">
+						<tbody>
+							<tr>
+								<td style="width: 8vw">
+									<img
+										src="https://avatars.githubusercontent.com/u/32509276?v=4"
+										alt=""
+										class="rounded-full h-24 w-24"
+									/>
+								</td>
+								<td style="width: 52vw">
+									irhasalif
+									<div class="font-bold text-lg">@alifirhas</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
 
-		<!-- Database -->
-		<div class="md:mx-auto mb-5 w-full max-w-3xl md:text-center text-lg">
-			Ini adalah database dari SIPP - Adiwiyata yang dapat saya tunjukkan
-		</div>
+				<!-- Project showcase -->
+				<div class="w-[65vw] mx-auto mt-4">
+					<!-- Title -->
+					<h1 class="text-6xl font-bold">SIPP - Adiwiyata</h1>
 
-		<iframe src="https://dbdiagram.io/d/6323e92e0911f91ba5c34bf2" frameborder="0" class="h-screen w-full max-w-[75%] mx-auto"></iframe>
-	
+					<!-- Sub title -->
+					<h2 class="text-4xl font-semibold mt-6">
+						Sistem Penataan dan Penaatan - Adiwiyata
+					</h2>
+
+					<!-- Writing -->
+					<div class="mt-[5vh]">
+						<p class="mb-4 text-lg leading-normal tracking-wide font-sans">
+							Saya telah berkontribusi dalam mengembangkan salah satu sub-sistem
+							yang penting dalam Sistem Penataan dan Penaatan (SIPP), khususnya
+							pada domain Penilaian Sekolah Adiwiyata yang berfokus pada
+							pengelolaan dan evaluasi sekolah yang memenuhi standar Adiwiyata.
+							Yang digunakan oleh Dinas Lingkungan Hidup Kota Batu.
+						</p>
+						<p class="mb-4 text-lg leading-normal tracking-wide font-sans">
+							Pengembangan SIPP saya lakukan ketika saya melakukan magang di
+							Social Economic Accelerator Lab - Malang dan Saya bertanggung
+							jawab dalam membangun RESTful-API untuk sub-sistem ini.
+							RESTful-API ini dirancang dengan tujuan untuk memudahkan integrasi
+							dengan antarmuka pengguna (front-end) serta menyediakan
+							fleksibilitas dalam menggabungkan dengan sistem lainnya.
+						</p>
+						<p class="mb-4 text-lg leading-normal tracking-wide font-sans">
+							Dalam pengembangan RESTful-API, saya membuat dua jenis API.
+							Pertama, RESTful-API yang dapat diakses dan mensimulasikan query
+							builder, sehingga memungkinkan tim front-end untuk menjelajahi dan
+							mengakses data dengan mudah seperti menggunakan media query. API
+							yang kedua, yaitu Custom API, dirancang dengan tujuan untuk
+							mengurangi logika bisnis (business logic) yang terdapat di
+							antarmuka pengguna (front-end). Dengan adanya Custom API ini, kami
+							dapat memisahkan dan mengelola logika khusus yang sesuai dengan
+							kebutuhan fitur yang ada di antarmuka pengguna.
+						</p>
+
+						<p class="mb-4 text-lg leading-normal tracking-wide font-sans">
+							Melalui pengembangan RESTful-API dan API yang dibuat, tim berharap
+							dapat memberikan solusi yang terintegrasi dan membantu dalam
+							meningkatkan efisiensi pengelolaan sekolah Adiwiyata.
+						</p>
+
+						<p class="mb-4 text-lg leading-normal tracking-wide font-sans">
+							Dalam pembuatan RESTful-API, saya menggunakan beberapa teknologi
+							berikut:
+						</p>
+
+						<div class="flex flex-wrap gap-2 mb-4">
+							<div class="btn btn-info btn-outline">
+								<iconify-icon icon="logos:adonisjs-icon"></iconify-icon>
+								&nbsp; AdonisJS
+							</div>
+							<div class="btn btn-success btn-outline">
+								<iconify-icon icon="la:node"></iconify-icon>
+								&nbsp;node.js
+							</div>
+							<div class="btn btn-nutral btn-outline">
+								<iconify-icon icon="simple-icons:postman"></iconify-icon>
+								&nbsp;postman
+							</div>
+							<div class="btn btn-info btn-outline">
+								<iconify-icon icon="simple-icons:dart"></iconify-icon>
+								&nbsp; TypeScript
+							</div>
+							<div class="btn btn-primary btn-outline">
+								<iconify-icon icon="fontisto:mysql"></iconify-icon>
+								&nbsp; PostgreSQL
+							</div>
+						</div>
+
+						<p class="mb-4 text-lg leading-normal tracking-wide font-sans">
+							Ini adalah database dari SIPP - Adiwiyata yang dapat saya
+							pertunjukkan
+						</p>
+
+						<iframe
+							src="https://dbdiagram.io/d/6323e92e0911f91ba5c34bf2"
+							frameborder="0"
+							class="h-screen w-full mx-auto mb-4"
+						></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
 	</body>
 </html>
