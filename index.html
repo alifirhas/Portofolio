@@ -1,86 +1,300 @@
 <!DOCTYPE html>
-<html data-theme="halloween">
+<html lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-		<title>Alif Irhas | Portofolio</title>
-
-		<!-- Iconify -->
-		<script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+		<title>alifirhas</title>
 
 		<!-- Tailwind -->
-		<link href="./dist/output.css" rel="stylesheet" />
+		<link href="dist/output.css" rel="stylesheet" />
+
+		<!-- Icon -->
+		<link
+			rel="icon"
+			href="https://avatars.githubusercontent.com/u/32509276?v=4"
+			type="image/png"
+		/>
+
+		<!-- font-awesome -->
+		<script
+			defer
+			src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+			integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc"
+			crossorigin="anonymous"
+		></script>
+
+		<!-- Jquery -->
+		<script
+			src="https://code.jquery.com/jquery-3.4.1.min.js"
+			integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+			crossorigin="anonymous"
+		></script>
 	</head>
-	<body class="p-6 min-h-screen font-sans text-gray-200">
-		<div class="lg:mt-32 mt-24"></div>
 
-		<!-- Title -->
-		<div class="lg:text-center">
-			<h1 class="text-7xl font-bold mb-6">Hai, Saya Alif Irhas 👋</h1>
-			<div class="text-xl underline">Web Developer</div>
-		</div>
+	<body>
+		<!-- Start content -->
 
-		<!-- Perkenalan -->
-		<div
-			class="text-xl lg:w-[70vh] mx-auto mt-6 leading-relaxed lg:text-center"
-		>
-			<p>
-				Saya mengimplementasikan logika bisnis dan algoritma dalam back-end
-				sebuah web, seperti REST-API. Dengan bantuan project management tool,
-				VScode, dan secangkir kopi ☕.
-			</p>
+		<div id="content" class="grid grid-cols-1 lg:grid-cols-3 w-full h-screen">
+			<!-- Profile -->
+			<div
+				class="text-white bg-gradient-to-b lg:bg-gradient-to-r from-neutral-500 to-black relative font-['Poppins']"
+			>
+				<!-- Background -->
+				<img
+					src="./assets/images/wallpaper.gif"
+					alt=""
+					class="h-full w-full object-cover absolute mix-blend-overlay pointer-events-none"
+				/>
 
-			<div class="mt-24"></div>
-
-			<div class="container mx-auto">
-				<center>
-					<a href="./pages/project/index.html">
-						<button class="btn btn-lg btn-success btn-outline items-center">
-							<iconify-icon icon="mdi:magnify"></iconify-icon>
-							&nbsp; Lihat Project
-						</button>
-					</a>
-				</center>
-			</div>
-
-			<div class="mt-24"></div>
-
-			<p>
-				Saya sedang berada di
-				<iconify-icon icon="mdi:map-marker"></iconify-icon> Bondowoso, Jawa
-				Timur, Indonesia. Mari hubungi saya dan buat sesuatu yang menarik
-			</p>
-			<div>
-				<a href="https://www.linkedin.com/in/alif-irhas-0750331b3/" target="_blank">
-					<button class="btn btn-info mt-2 normal-case text-lg">
-						<iconify-icon icon="mdi:linkedin"></iconify-icon>
-						&nbsp; LinkedIn
-					</button>
-				</a>
-				<button
-					class="btn btn-primary mt-2 lowercase text-lg"
-					onclick="copyToClipBoard('irhasalif@gmail.com')"
+				<!-- Profile content -->
+				<div
+					class="py-[4vh] px-[3vw] z-10 h-full flex flex-col justify-center text-center lg:text-left"
 				>
-					<iconify-icon
-						icon="material-symbols:content-copy-outline"
-					></iconify-icon>
-					&nbsp; irhasalif@gmail.com
-				</button>
-				<a href="https://github.com/alifirhas" target="_blank">
-					<button class="btn btn-secondary mt-2 normal-case text-lg">
-						<iconify-icon icon="mdi:github"></iconify-icon>
-						&nbsp; GitHub
-					</button>
-				</a>
+					<!-- Profile image -->
+					<div class="w-44 h-44 rounded-md mx-auto lg:mx-0">
+						<img
+							src="https://avatars.githubusercontent.com/u/32509276?v=4"
+							alt=""
+							class="object-cover"
+						/>
+					</div>
+
+					<!-- Username -->
+					<div class="mt-10">
+						<p class="inline-block text-4xl">irhasalif</p>
+						<span class="text-2xl">/</span>
+						<a
+							href="https://github.com/alifirhas"
+							class="text-2xl no-underline hover:underline"
+							>@alifirhas</a
+						>
+						<div id="profession" class="mt-4 text-xl font-semibold">
+							Web Developer
+						</div>
+					</div>
+
+					<!-- Bio -->
+					<div id="userbio" class="text-2xl font-semibold mt-10">
+						A person with an unhealthy obsession with back-end engineering and
+						algorithm
+					</div>
+
+					<!-- About -->
+					<div id="about" class="mt-10">
+						<div class="flex flex-col gap-2">
+							<a href="mailto:irhasalif@gmail.com"
+								class="no-underline hover:underline"
+								><i class="fas fa-envelope"></i> &nbsp;
+								irhasalif@gmail.com</a
+							>
+							<span
+								><i class="fab fa-github"></i> &nbsp;
+								<a href="https://alifirhas.github.io/"
+									>https://alifirhas.github.io/</a
+								></span
+							>
+							<span
+								><i class="fas fa-map-marker-alt"></i> &nbsp;&nbsp;
+								Bondowoso</span
+							>
+							<span
+								><i class="fas fa-user-tie"></i> &nbsp;&nbsp; Available for
+								hire</span
+							>
+						</div>
+
+						<div
+							class="mt-10 flex gap-4 justify-center lg:justify-start bg-transparent"
+						>
+							<a
+								href="https://www.dribbble.com/irhasalif"
+								target="_blank"
+								class="bg-pink-400 rounded-md hover:rounded-sm px-4 py-2"
+								><i class="fab fa-dribbble"></i
+							></a>
+							<a
+								href="https://www.linkedin.com/in/alif-irhas-0750331b3/"
+								target="_blank"
+								class="bg-blue-400 rounded-md hover:rounded-sm px-4 py-2"
+								><i class="fab fa-linkedin-in"></i
+							></a>
+							<a
+								href="https://www.medium.com/@irhasalif/"
+								target="_blank"
+								class="bg-slate-400 rounded-md hover:rounded-sm px-4 py-2"
+								><i class="fab fa-medium-m"></i
+							></a>
+							<a
+								href="https://github.com/alifirhas"
+								target="_blank"
+								class="bg-purple-400 rounded-md hover:rounded-sm px-4 py-2"
+								><i class="fab fa-github"></i
+							></a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Display -->
+			<div
+				class="col-span-2 h-full lg:overflow-scroll p-4 text-white bg-black py-[4vh] px-[3vw]"
+			>
+				<!-- Project title -->
+				<h1 class="text-5xl mt-14 font-semibold">Project.</h1>
+
+				<!-- Project gallery -->
+				<div class="grid grid-cols-1 lg:grid-cols-2 gap-10 mt-10 px-4">
+					<a
+						href=""
+						class="w-full bg-zinc-900 text-white p-6 flex flex-col gap-4 hover:scale-105 ease-in-out duration-300"
+					>
+						<div class="text-2xl font-semibold">Meal Planner on Steroid</div>
+						<div class="text-xl">
+							<span style="display: block"
+								>Meal Planner dengan Algoritma Genetika</span
+							>
+						</div>
+						<div class="flex gap-4">
+							<span style="display: inline-block"
+								><i class="fas fa-code"></i>&nbsp; Python & Flutter</span
+							>
+						</div>
+					</a>
+
+					<a
+						href=""
+						class="w-full bg-zinc-900 text-white p-6 flex flex-col gap-4 hover:scale-105 ease-in-out duration-300"
+					>
+						<div class="text-2xl font-semibold">SIPP - Adiwiyata</div>
+						<div class="text-xl">
+							<span style="display: block"
+								>Sistem Penataan dan Penaatan - Adiwiyata</span
+							>
+						</div>
+						<div class="flex gap-4">
+							<span style="display: inline-block"
+								><i class="fas fa-code"></i>&nbsp; Typescript & API</span
+							>
+						</div>
+					</a>
+
+					<a
+						href=""
+						class="w-full bg-zinc-900 text-white p-6 flex flex-col gap-4 hover:scale-105 ease-in-out duration-300"
+					>
+						<div class="text-2xl font-semibold">Semboyan Cantik</div>
+						<div class="text-xl">
+							<span style="display: block">Cegah stunting Baduta</span>
+						</div>
+						<div class="flex gap-4">
+							<span style="display: inline-block"
+								><i class="fas fa-code"></i>&nbsp; Python & Flutter</span
+							>
+						</div>
+					</a>
+
+					<a
+						href="https://github.com/alifirhas/natsa2.0_Website"
+						target="_blank"
+						class="w-full bg-zinc-900 text-white p-6 flex flex-col gap-4 hover:scale-105 ease-in-out duration-300"
+					>
+						<div class="text-2xl font-semibold">Nature Sawah</div>
+						<div class="text-xl">
+							<span style="display: block"
+								>Menjual dan menyewakan sawah menggunakan Laravel dan Tailwind
+							</span>
+						</div>
+						<div class="flex gap-4">
+							<span style="display: inline-block"
+								><i class="fas fa-code"></i>&nbsp; Laravel & Tailwind</span
+							>
+						</div>
+					</a>
+
+					<a
+						href="https://github.com/alifirhas/MimiKost"
+						target="_blank"
+						class="w-full bg-zinc-900 text-white p-6 flex flex-col gap-4 hover:scale-105 ease-in-out duration-300"
+					>
+						<div class="text-2xl font-semibold">Mimikost</div>
+						<div class="text-xl">
+							<span style="display: block"
+								>Website personal punya Ibu Kost
+							</span>
+						</div>
+						<div class="flex gap-4">
+							<span style="display: inline-block"
+								><i class="fas fa-code"></i>&nbsp; Laravel & Tailwind</span
+							>
+						</div>
+					</a>
+
+					<a
+						href="https://github.com/alifirhas/Belimbing-Naive-Bayes-RGB-Matlab"
+						target="_blank"
+						class="w-full bg-zinc-900 text-white p-6 flex flex-col gap-4 hover:scale-105 ease-in-out duration-300"
+					>
+						<div class="text-2xl font-semibold">
+							Deteksi Kematangan Belimbing
+						</div>
+						<div class="text-xl">
+							<span style="display: block"
+								>Mendeteksi kematangan buah belimbing</span
+							>
+						</div>
+						<div class="flex gap-4">
+							<span style="display: inline-block"
+								><i class="fas fa-code"></i>&nbsp; Matlab</span
+							>
+						</div>
+					</a>
+				</div>
+
+				<!-- Current Project title -->
+				<h1 class="text-5xl mt-14 font-semibold">Current Project.</h1>
+
+				<!-- Current Project gallery -->
+				<div class="grid grid-cols-1 lg:grid-cols-2 gap-10 mt-10 px-4">
+					<div
+
+						onclick="please_wait_modal.showModal()"
+						class="w-full bg-gradient-to-r from-zinc-900 to-neutral-800 text-white relative hover:scale-105 ease-in-out duration-300 hover:cursor-pointer"
+					>
+						<img
+							src="./assets/images/current_project/varitas.gif"
+							alt=""
+							class="h-full w-full bg-cover mix-blend-overlay absolute object-cover"
+						/>
+						<div class="p-6 flex flex-col gap-4">
+							<div class="text-2xl font-semibold">Varitas</div>
+							<div class="text-xl">
+								<span style="display: block">Your status panel</span>
+							</div>
+							<div class="flex gap-4">
+								<span style="display: inline-block"
+									><i class="fas fa-code"></i>&nbsp; Flutter</span
+								>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
-	</body>
 
-	<script>
-		function copyToClipBoard(copyText) {
-			// Copy the text inside the text field
-			navigator.clipboard.writeText(copyText);
-		}
-	</script>
+		<dialog
+			id="please_wait_modal"
+			class="modal"
+			data-theme="cyberpunk"
+		>
+			<form method="dialog" class="modal-box">
+				<h3 class="font-bold text-lg" data-theme="cyberpunk">Coming Soon!</h3>
+				<p class="py-4" data-theme="cyberpunk">
+					Sit tight and wait for it's descend
+				</p>
+			</form>
+			<form method="dialog" class="modal-backdrop">
+				<button>close</button>
+			</form>
+		</dialog>
+	</body>
 </html>
